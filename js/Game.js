@@ -29,7 +29,7 @@ class Game {
         }
         // Reset the heart lives
         for (let pic of heartList) {
-            pic.src = "file:///Users/s/Documents/GitHub/oop-game-show-app/images/liveHeart.png"
+            pic.src = "./images/liveHeart.png"
         }
         // Reset the start screen classes and hide start overlay screen
         startScreen.className = "start"
@@ -98,7 +98,7 @@ class Game {
      */
     removeLife() {
         // Update image to lost heart on the current heart
-        heartList[this.missed].src = "file:///Users/s/Documents/GitHub/oop-game-show-app/images/lostHeart.png"
+        heartList[this.missed].src = "./images/lostHeart.png"
         this.missed += 1
         if (this.missed === 5) {
             this.gameOver()
